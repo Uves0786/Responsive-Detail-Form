@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box-container">
+        <img class="image" src="6797587.png" alt="none" />
+        <p class="message">Message Sent!</p>
+      </div>
+      <p class="note">Thanks for completing the form.We'll be in touch soon!</p>
+    </div>
+    <div class="contact-form-container">
+      <h1>Contact Us</h1>
+      <form>
+        <div class="form-group" id="form-group-1">
+          <div class="form-field">
+            <label for="first-Name">First Name <span>*</span></label>
+            <input
+              type="text"
+              id="firstname"
+              name="firstName"
+              placeholder="First Name"
+            />
+            <p class="paragraph">This field is required</p>
+          </div>
+          <div class="form-field">
+            <label for="lastName">Last Name <span>*</span></label>
+            <input
+              type="text"
+              id="lastname"
+              name="lastName"
+              placeholder="Last Name"
+            />
+            <p class="paragraph">This field is required</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address <span>*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+          />
+          <p class="paragraph">This field is required</p>
+        </div>
+        <div class="form-group">
+          <label for="Query">Query Type <span>*</span></label>
+          <div class="form-group" id="form-group-1">
+            <div class="form-field">
+              <button id="Query-button" type="button" title="button">
+                <input
+                  type="radio"
+                  id="general-enquiry"
+                  name="general-enquiry"
+                  placeholder="general-enquiry"
+                />
+                <label for="General-Enquiry">General-Enquiry</label>
+              </button>
+            </div>
+            <div class="form-field">
+              <button id="Query-button" type="button" title="button">
+                <input
+                  type="radio"
+                  id="Support-Request"
+                  name="general-enquiry"
+                  placeholder="general-enquiry"
+                />
+                <label for="Support-Request">Support-Request</label>
+              </button>
+            </div>
+            <p class="paragraph">This field is required</p>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="firstName">Message <span>*</span></label>
+          <textarea
+            id="message-input"
+            name="message"
+            placeholder=""
+            required
+            title="message"
+          ></textarea>
+          <p class="paragraph">This field is required</p>
+        </div>
+        <div id="checkbox-message">
+          <input class="me" type="checkbox" required title="message" />
+          <p>
+            I consent to being contacted by the team
+            <span>*</span>
+          </p>
+        </div>
+        <div class="form-group">
+          <button id="submit-button" type="submit" title="button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

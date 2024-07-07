@@ -1,0 +1,224 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.contact-form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.contact-form-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group:first-of-type {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field:first-of-type {
+  margin-right: 20px; /* Add space between first name and last name */
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 10px; /* Padding inside input fields */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+
+input[type="text"] {
+  width: 90%; /* Decrease width of first name and last name input fields */
+}
+
+input[type="email"] {
+  width: 95%; /* Full width for email input field */
+}
+
+input.error,
+textarea.error {
+  border: 2px solid red; /* Red border for error state */
+}
+
+#Query-button {
+  margin-top: 4px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  border-top: transparent;
+  border-bottom: transparent;
+  border-right: 2px solid #c4c1c1;
+  border-left: 2px solid #c4c1c1;
+  border-radius: 5px;
+  background: transparent;
+}
+
+#message-input {
+  height: 75px;
+}
+
+#checkbox-message {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+}
+
+#submit-button {
+  height: 35px;
+  border-radius: 4px;
+  outline: none;
+  border: transparent;
+  color: white;
+  background-color: #096452;
+}
+
+.paragraph {
+  display: none;
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+span {
+  color: red;
+}
+
+#submit-button:hover {
+  cursor: pointer;
+  background-color: #05473a;
+}
+
+#email:hover,
+#Query-button:hover,
+#firstname:hover,
+#lastname:hover,
+#message-input:hover {
+  border: 2px solid #098e73;
+}
+.box {
+  margin-top: 110px;
+  height: 35%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #203536;
+  display: none;
+}
+.box-container {
+  display: flex;
+  margin-left: 0px;
+  width: auto;
+  margin-left: 10px;
+}
+.image {
+  width: 20px;
+  height: 15px;
+  margin-top: 23px;
+}
+.message,
+.note {
+  color: white;
+  font-size: larger;
+  margin-left: 10px;
+}
+@media (max-width: 600px) {
+  body {
+    height: auto;
+  }
+  .contact-form-container {
+    margin-top: 25px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+  }
+  input[type="text"] {
+    width: 80%; /* Decrease width of first name and last name input fields */
+  }
+  input[type="email"] {
+    width: 80%; /* Full width for email input field */
+  }
+  #form-group-1 {
+    flex-direction: column;
+  }
+  .form-field:first-child {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .contact-form-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  label {
+    font-size: 12px;
+  }
+  input,
+  textarea {
+    padding: 8px;
+    font-size: 12px;
+    border: 2px solid #c5c2c2;
+  }
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  #Query-button {
+    padding: 8px;
+    width: 90%;
+    height: auto;
+    border: 2px solid #c5c2c2;
+  }
+  #message-input {
+    height: 200px;
+    border: 2px solid #c5c2c2;
+  }
+  #checkbox-message {
+    width: 90%;
+  }
+  span {
+    color: red;
+  }
+  .paragraph {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
